@@ -1,0 +1,60 @@
+<section>
+  <h2>Buenas prácticas</h2>
+  <div class="fragment">
+    <p>Múltiple entornos</p>
+    <img class="simple fragment fragment-hide current-visible" src="assets/intro/works_on_local.jpg"/>
+    <!-- Prueba siempre en varios entornos antes de ponerlo en producción, al menos dev y pre, lo más parecido a producción posible. Usa docker en la medida de lo posible -->
+  </div>
+  <div class="fragment">
+    <p>Integración contínua (con despliegue)</p>
+    <div class="fragment fragment-hide current-visible">
+      <img class="simple" src="assets/intro/jenkins.png"/>
+      <img class="simple" src="assets/intro/travis.png"/>
+      <img class="simple" src="assets/intro/bamboo.png"/>
+    </div>
+  </div>
+  <!-- ¿Cuánto tardan en desplegar en producción? ¿En cuántos servidores? -->
+  <!-- Amazon despliega en producción cada 11.6 segundos -->
+  <!-- Twilio <a href="https://aws.amazon.com/solutions/case-studies/twilio/">Twilio despliega una media de 30 funcionalidades al día con 99.999% de disponibilidad -->
+  <p class="fragment">Cache</p>
+  <div class="fragment fragment-hide current-visible">
+    <div class="two-column-left">
+      <p>Ebay.es</p>
+      <ul class="font-white no-decoration align-right">
+        <li class="simple"><span class="number">174</span> request</li>
+        <li class="simple"><span class="number">132</span> van por cache</li>
+        <li class="simple"><span class="number">42</span> no van por cache</li>
+      </ul>
+    </div>
+    <div class="two-column-right fragment-hide current-visible">
+      <p class="font-white">Apróx. el <span class="font-big">76%</span></p>
+    </div>
+  </div>
+  <p class="fragment">CDN</p>
+  <div class="fragment fragment-hide current-visible">
+    <div class="two-column-left">
+      <p>amazon.com</p>
+      <ul class="font-white no-decoration align-right">
+        <li class="simple"><span class="number">113</span> request</li>
+        <li class="simple"><span class="number">17</span> van a amazon</li>
+        <li class="simple"><span class="number">96</span> a CDN</li>
+      </ul>
+    </div>
+    <div class="two-column-right fragment-hide current-visible">
+      <p class="font-white">Apróx. el <span class="font-big">85%</span></p>
+    </div>
+  </div>
+  <!-- Todo contenido estático intenta tirarlo siempre de un lugar que no se lleve tu carga de cómputo -->
+  <!-- Estamos ahorrando a nuestros servidores webs procesaar 96 peticiones es decir apróx el 85% de las peticiones que nos hacen -->
+  <div class="fragment">
+    <p>Monitoriza</p>
+    <div class="fragment fragment-hide current-visible">
+      <img class="simple" src="assets/intro/datadog.png"/>
+      <img class="simple" src="assets/intro/logentries.png"/>
+      <img class="simple" src="assets/intro/newRelic.png"/>
+    </div>
+  </div>
+  <!-- No es la primera vez que un cliente no sabe ni que su web se le ha caído -->
+  <!-- Ejemplo de avisa que llevaba mes y medio caído y no se habían dado cuenta -->
+  <p class="fragment">Disaster recovery</p>
+</section>
