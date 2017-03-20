@@ -50,5 +50,8 @@ Reveal.initialize({
   }, {
     src: 'plugin/external/external.js',
     condition: function () { return !!document.querySelector('[data-external]'); }
-  }]
+  }, {
+    src: 'plugin/fullscreen-img/fullscreen-img.js'
+  }
+  ]
 });
