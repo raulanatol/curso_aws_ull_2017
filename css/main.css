@@ -8,6 +8,19 @@
   width: 50%;
 }
 
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.container > div {
+  width: 100%;
+}
+
+.container > .col-sep {
+  padding: 15px;
+}
+
 .reveal section img.simple {
   margin: 0;
   background: none;
@@ -118,4 +131,8 @@ i.small {
 
 div.small > p {
   margin: 0;
+}
+
+p.bold {
+  font-weight: bold;
 }
