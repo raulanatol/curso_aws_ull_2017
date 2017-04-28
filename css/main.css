@@ -51,6 +51,12 @@ img.fullscreen {
   left: 80%;
 }
 
+.reveal section img.white {
+  background: white;
+  border: 0;
+  box-shadow: none;
+}
+
 .back-color-blue {
   background-color: #146287
 }
